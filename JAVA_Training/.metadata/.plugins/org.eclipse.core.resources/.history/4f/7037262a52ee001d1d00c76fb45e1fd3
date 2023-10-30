@@ -1,0 +1,42 @@
+package org.jsp.Array;
+
+import java.util.Scanner;
+
+public class TwoDimensionalArray {
+
+}
+class twodimensional
+{
+   int r,c;
+   private int [][]mark;
+   Scanner sc=new Scanner(System.in);
+   
+ public void read() {
+	 System.out.println("Enter the row");
+	 r=sc.nextInt();
+	 System.out.println("Enter the colum");
+	 c=sc.nextInt();
+	 mark=new int [r][c];
+	}
+ public void sum()
+ {
+	 for(int i=0;i<r;i++)
+	 {
+		 for(int j=0;j<i;j++)
+		 {
+			 mark[i][j]=sc.nextInt();
+		 }
+	 }
+ }
+ public void print()
+ {
+	 for(int i=0;i<r;i++)
+	 {
+		 for(int j=0;j<c;j++)
+		 {
+			 System.out.println("Print is two dimensoinal array \n"+mark[i][j]);
+		 }
+	 }
+ }
+	
+}

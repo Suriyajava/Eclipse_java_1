@@ -1,0 +1,88 @@
+package Shapes;
+
+import java.util.Scanner;
+
+import Shapes.ShapesManager.shapeTypes;
+
+public class Menu {
+	Scanner sc=new Scanner(System.in);
+	ShapesManager sm=new ShapesManager();
+	
+	private void displayHeader() 
+	{
+		System.out.println("*--- SHAPES MANAGER PROJECT! ---*\n");
+	}
+	public void displayMainMenu()
+	{ 
+		int sel=0;
+		while(sel!=9)
+		{
+			displayHeader(); 
+			System.out.println(" *** Main Menu ***");
+			System.out.println("1.Add a Shape");
+			System.out.println("2.Delete a Shspe");
+			System.out.println("3.List Shape");
+			System.out.println("9.Exit");
+			System.out.println("Enter your Choice : ");
+			
+			sel=sc.nextInt();
+			
+			switch (sel) {
+			
+			 case 1:
+				 displayShapesMenu();
+			 break;
+			 case 2: 
+				 sm.deleteShape(); 
+				 break;
+				 case 3:
+			  sm.ListShapes();
+			  break;
+			 
+			case 9:    
+				break;
+				
+			 
+			default:
+				System.out.println("Invalid selection try again.");
+			}
+		}
+	}
+	private void displayShapesMenu()
+	{
+		int sel=0;
+		while(sel!=9)
+		{
+			displayHeader();
+			System.out.println("== Shapes Menu ==");
+			System.out.println("\n1.Square");
+			System.out.println("2.Rectangle");
+			System.out.println("3.Cube");
+			System.out.println("4.Circle");
+			System.out.println("9.Exit");
+			System.out.println("Enter your choice: ");
+			
+			sel=sc.nextInt();
+			switch (sel) {
+			case 1: 
+				sm.AddShape(shapeTypes.Square); 
+				break;
+			case 2:
+				sm.AddShape(shapeTypes.Rectangle);
+				break;
+			case 3:
+				sm.AddShape(shapeTypes.Cube);
+				break;
+			case 4:
+				sm.AddShape(shapeTypes.Circle);
+				break;
+			case 9:
+				break; 
+			
+			default:
+				System.out.println("Invalid Selecion.Again!!");
+			}
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+D:\J SPIDER\java\JAVA_Training\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+724821114.index
+1696264553.index
+4239600689.index

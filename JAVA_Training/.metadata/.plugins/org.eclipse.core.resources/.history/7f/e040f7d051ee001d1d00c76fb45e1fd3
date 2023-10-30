@@ -1,0 +1,18 @@
+package org.jsp.Array;
+
+import java.util.Scanner;
+
+public class TwoDimensionalArray {
+
+}
+class twodimensional
+{
+   int n,i;
+   private int [][]mark;
+   Scanner sc=new Scanner(System.in);
+   private void read() {
+	// TODO Auto-generated method stub
+
+}
+	
+}
